@@ -22,7 +22,7 @@ void First(double x, double c, double a)
 void Second(double t)
 {
 	double S;
-	S = 3 * t * t - 6 * t + 2;
+	S = 3 * t * t - 6 * t;
 	printf_s("%f", S);
 }
 void Third(double a, double b, double c)
@@ -47,6 +47,7 @@ void Third(double a, double b, double c)
 }
 double Fourth(int code, double time)
 {
+	time /= time;
 	switch (code)
 	{
 	case 48:
@@ -84,16 +85,18 @@ void Fifth()
 }
 void Sixth(int* t, int N) 
 {
-	int i = N - 1;
-	int c = pow(10, i);
+	int i = 0;
 	int res = 0;
-	while (i >= 0)
-	{	
-		int c = pow(2, i);
-		res += t[i] * c;
-		i--;
+	int n = N - 1;
+
+	while (i < N)
+	{
+		res += t[i] * pow(2, n);
+		i++;
+		n--;
 	}
-	printf_s("%d", res);
+
+	printf("%d", res);
 
 }
 void Seventh(int I, int J)

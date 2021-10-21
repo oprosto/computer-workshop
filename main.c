@@ -19,17 +19,17 @@ int main()
 	float a;
 	float b;
 	float c;
-	//int t[N] = {1,1,1,1,1,1};
+	int t[6] = {1,1,1,1,1,0};
 	//scanf_s("%f", &a);
 	//scanf_s("%f", &b);
 	//scanf_s("%f", &c);
-	//First(a, b, c);
+	//First(1, 1, 1);
 	//Second(a);
 	//Third(a, b, c);
 	//printf_s("Result (in minuts) = %f ",Fourth(a, b));
 	//Fifth();
-	//Sixth(t, N);
-	Seventh(5, 5);
+	Sixth(t, 6);
+	//Seventh(5, 5);
 	return 0;
 
 }
